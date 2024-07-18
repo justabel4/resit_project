@@ -30,7 +30,7 @@ if (other.tag == "Player")
         }
 }
 
-/*private void OnTriggerExit(Collider other)
+private void OnTriggerExit(Collider other)
 {
     if (other.tag != "Player")
         {
@@ -38,6 +38,6 @@ if (other.tag == "Player")
             animator.SetTrigger("Close");
         }
 }
-*/
+
 
 }
