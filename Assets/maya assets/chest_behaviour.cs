@@ -7,6 +7,9 @@ public class NewBehaviourScript : MonoBehaviour
 
     public Animator animator;
     // Start is called before the first frame update
+
+    public GameObject objectToSpawn;
+    public Transform spawnPoinbt;
     void Start()
     {
         
@@ -18,13 +21,23 @@ public class NewBehaviourScript : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.tag == "Player")
+private void OnTriggerEnter(Collider other)
+{
+if (other.tag == "Player")
         {
             //play the animation
             animator.SetTrigger("Open");
         }
-    }
+}
+
+/*private void OnTriggerExit(Collider other)
+{
+    if (other.tag != "Player")
+        {
+            //play the animation
+            animator.SetTrigger("Close");
+        }
+}
+*/
 
 }
