@@ -29,7 +29,7 @@ if (other.tag == "Player")
             animator.SetTrigger("Open");
         }
 }
-
+/*
 private void OnTriggerExit(Collider other)
 {
     if (other.tag != "Player")
@@ -38,6 +38,6 @@ private void OnTriggerExit(Collider other)
             animator.SetTrigger("Close");
         }
 }
-
+*/
 
 }
